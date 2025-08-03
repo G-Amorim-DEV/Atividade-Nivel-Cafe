@@ -1,22 +1,23 @@
-/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Estrutura principal */
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
 #corpo {
-    background-color: beige;
-    height: 100vh;
-    width: 100vw;
+    background-color: #F5F5F5; 
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-/* Cabeçalho */
 #cabecalho {
-    background-color: crimson;
+    background-color: #2C3E50; 
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -24,7 +25,7 @@
 }
 
 #logo {
-    background-color: blue;
+    background-color: #2980B9;
     height: 100px;
     width: 100px;
 }
@@ -36,16 +37,15 @@
 }
 
 .blocos_genericos {
-    background-color: chocolate;
+    background-color: #3498DB; 
     height: 50px;
     width: 50px;
     padding: 10px;
 }
 
-/* Seção Home */
 #home {
-    background-color: blueviolet;
-    height: 100%;
+    background-color: #8E44AD; 
+    height: 82vh;
     padding: 10px;
     display: flex;
     gap: 10px;
@@ -53,9 +53,8 @@
     align-items: stretch;
 }
 
-/* Blocos principais */
 .bloco_principal {
-    background-color: darkred;
+    background-color: #6C3483; 
     flex: 1;
     min-width: 300px;
     padding: 10px;
@@ -64,35 +63,251 @@
     gap: 10px;
 }
 
-/* Bloco esquerdo */
 #bloco_esquerdo_home {
     justify-content: start;
     align-items: stretch;
 }
 
 #texto {
-    background-color: fuchsia;
+    background-color: #BB8FCE; 
     height: 70%;
 }
 
 #botao {
-    background-color: fuchsia;
+    background-color: #BB8FCE; 
     height: 20%;
 }
 
 #redes_sociais {
-    background-color: fuchsia;
+    background-color: #BB8FCE; 
     height: 10%;
 }
 
-/* Bloco direito */
 #bloco_direito_home {
     justify-content: center;
     align-items: center;
 }
 
 #foto {
-    background-color: fuchsia;
-    width: 99%;
-    height: 99%;
+    background-color: #BB8FCE; 
+    width: 100%;
+    height: 100%;
 }
+
+#about {
+    background-color: #1ABC9C; 
+    min-height: 100vh;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#sobre {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    padding: 10px 0;
+}
+
+#secao_about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    width: 100%;
+}
+
+.bloco_about {
+    background-color: #76D7C4; 
+    height: 80vh;
+    flex: 1;
+    padding: 20px;
+    max-width: 90%;
+    min-width: 50%;
+}
+
+#conteudo_foto,
+#conteudo_texto {
+    background-color: #5B2C6F; 
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+}
+
+
+#skills {
+    background-color: #FADBD8;
+    min-height: 100vh;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#habilidades {
+    width: 100%;
+    text-align: center;
+    color: #922B21; 
+    font-size: 2rem;
+    padding: 10px 0;
+}
+
+#secao_skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    width: 100%;
+}
+
+#subtitulo_skills {
+    background-color: #F5B7B1; 
+    height: 100%;
+    padding: 20px;
+    flex: 1;
+    max-width: 99%;
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#subtitulo_skills h3 {
+    color: #641E16; 
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.bloco_skills {
+    background-color: #D98880; 
+    flex: 1;
+    padding: 20px;
+    max-width: 100%;
+    width: 100%;
+}
+
+#texto_skills,
+#html5,
+#css3,
+#javascript,
+#ux_ui {
+    flex: 1;
+    width: 100%;
+}
+
+#texto_skills {
+    flex: 2; 
+}
+
+#foto_Skill {
+    background-color: #F5B7B1;
+    height: 80vh;
+    flex: 1;
+    padding: 20px;
+    max-width: 90%;
+    min-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#foto_habilidades {
+    background-color: #641E16;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+}
+
+#work {
+    background-color: #FDEBD0; 
+    height: 100vh;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#work > h2 {
+    width: 100%;
+    text-align: center;
+    color: #935116;
+    font-size: 2rem;
+    padding: 10px 0;
+    flex-shrink: 0;
+}
+
+#secao_work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    flex-grow: 1;
+    align-content: center;
+}
+
+.fotos_trabalhos {
+    background-color: #F9E79F;
+    width: 28%;             
+    height: 50%;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    flex-shrink: 0;
+}
+
+footer {
+    background-color: #2C3E50; /* Mesma cor do cabeçalho */
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+footer h4 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+#social-media {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap; /
+}
+
+#social-media .contato {
+    background-color: #2980B9;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+#social-media p {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
