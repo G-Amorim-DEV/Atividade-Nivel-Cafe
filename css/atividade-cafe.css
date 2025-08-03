@@ -1,0 +1,98 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estrutura principal */
+#corpo {
+    background-color: beige;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Cabeçalho */
+#cabecalho {
+    background-color: crimson;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+}
+
+#menu_principal {
+    display: flex;
+    gap: 10px;
+    padding: 5px;
+}
+
+.blocos_genericos {
+    background-color: chocolate;
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+}
+
+/* Seção Home */
+#home {
+    background-color: blueviolet;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+/* Blocos principais */
+.bloco_principal {
+    background-color: darkred;
+    flex: 1;
+    min-width: 300px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Bloco esquerdo */
+#bloco_esquerdo_home {
+    justify-content: start;
+    align-items: stretch;
+}
+
+#texto {
+    background-color: fuchsia;
+    height: 70%;
+}
+
+#botao {
+    background-color: fuchsia;
+    height: 20%;
+}
+
+#redes_sociais {
+    background-color: fuchsia;
+    height: 10%;
+}
+
+/* Bloco direito */
+#bloco_direito_home {
+    justify-content: center;
+    align-items: center;
+}
+
+#foto {
+    background-color: fuchsia;
+    width: 99%;
+    height: 99%;
+}
