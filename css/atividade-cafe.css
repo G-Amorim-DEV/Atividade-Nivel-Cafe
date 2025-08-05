@@ -21,6 +21,7 @@ html, body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap; 
 }
 
 #logo {
@@ -33,6 +34,8 @@ html, body {
     display: flex;
     gap: 10px;
     padding: 5px;
+    flex-wrap: wrap; 
+    justify-content: center;
 }
 
 .blocos_genericos {
@@ -44,9 +47,10 @@ html, body {
 
 #home {
     background-color: #8E44AD; 
-    height: 82vh;
+    min-height: 82vh;
     padding: 10px;
     display: flex;
+    flex-wrap: wrap; 
     gap: 10px;
     justify-content: center;
     align-items: stretch;
@@ -54,7 +58,7 @@ html, body {
 
 .bloco_principal {
     background-color: #6C3483; 
-    flex: 1;
+    flex: 1 1 300px; 
     min-width: 300px;
     padding: 10px;
     display: flex;
@@ -113,7 +117,7 @@ html, body {
 
 #secao_about {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap; 
     justify-content: center;
     align-items: stretch;
     gap: 20px;
@@ -123,10 +127,8 @@ html, body {
 .bloco_about {
     background-color: #76D7C4; 
     height: 80vh;
-    flex: 1;
+    flex: 1 1 300px; 
     padding: 20px;
-    max-width: 90%;
-    min-width: 50%;
 }
 
 #conteudo_foto,
@@ -139,7 +141,6 @@ html, body {
     color: white;
     font-size: 1.2rem;
 }
-
 
 #skills {
     background-color: #FADBD8;
@@ -161,7 +162,7 @@ html, body {
 
 #secao_skills {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap; 
     justify-content: center;
     align-items: stretch;
     gap: 20px;
@@ -170,11 +171,9 @@ html, body {
 
 #subtitulo_skills {
     background-color: #F5B7B1; 
+    flex: 1 1 300px; 
     height: 100%;
     padding: 20px;
-    flex: 1;
-    max-width: 99%;
-    min-width: 50%;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -190,7 +189,6 @@ html, body {
     background-color: #D98880; 
     flex: 1;
     padding: 20px;
-    max-width: 100%;
     width: 100%;
 }
 
@@ -210,10 +208,8 @@ html, body {
 #foto_Skill {
     background-color: #F5B7B1;
     height: 80vh;
-    flex: 1;
+    flex: 1 1 300px; 
     padding: 20px;
-    max-width: 90%;
-    min-width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -262,13 +258,14 @@ html, body {
 }
 
 .fotos_trabalhos {
-    background-color: #F9E79F;
-    width: 28%;             
-    height: 50%;
+    background-color: #e4d07f;
+    flex: 1 1 calc(33.33% - 20px); 
+    min-width: 250px;             
+    min-height: 250px;            
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    flex-shrink: 0;
 }
+
 
 footer {
     background-color: #2C3E50; 
@@ -292,7 +289,7 @@ footer h4 {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    flex-wrap: wrap; /
+    flex-wrap: wrap;
 }
 
 #social-media .contato {
@@ -309,4 +306,3 @@ footer h4 {
     font-size: 0.9rem;
     color: #ccc;
 }
-
