@@ -47,7 +47,7 @@ html, body {
 
 #home {
     background-color: #8E44AD; 
-    min-height: 82vh;
+    min-height: 87.5vh;
     padding: 10px;
     display: flex;
     flex-wrap: wrap; 
@@ -228,14 +228,12 @@ html, body {
 
 #work {
     background-color: #FDEBD0; 
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    box-sizing: border-box;
-    overflow: hidden;
 }
 
 #work > h2 {
@@ -276,6 +274,7 @@ footer {
     align-items: center;
     gap: 20px;
     text-align: center;
+
 }
 
 footer h4 {
